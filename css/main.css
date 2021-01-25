@@ -4,17 +4,28 @@ html {
 }
 
 
-	body {
-	height: 100%;
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: linear-gradient(270deg, #ffc100, #2d0176);
     background-size: 400% 400%;
-
     -webkit-animation: sunset 120s ease infinite;
     -moz-animation: sunset 120s ease infinite;
     animation: sunset 120s ease infinite;
+}
+
+h1{
+    font-size:60px;
+    align-content:center;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
 }
 
 @-webkit-keyframes sunset {
@@ -31,4 +42,9 @@ html {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+.center {
+    display:block;
+    align-content:center;
 }
