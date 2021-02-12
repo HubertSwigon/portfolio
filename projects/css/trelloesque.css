@@ -20,7 +20,7 @@ textarea, input{
 
 textarea{
     outline: none;
-    width: 295px; 
+    width: 292px; /*could be 295 to reach the end, but we want a space for the scroll*/
     padding-left: 5px;
     height: 120px;
     display:inline-block;
