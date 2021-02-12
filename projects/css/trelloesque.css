@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    border:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    color: #202020;
+}
+
+body{
+    background-color:#656565 !important;
+    background: #656565;
+}
+
+h3{
+    padding:5%;
+}
+
+input[type="text"]{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    margin:2%;
+    width: 80%;
+    height: 80%;
+    font-size: large;
+}
+
+/*Colors*/
+.r-background{
+    background-color: #FF5A5A;
+}
+.r-light-background{
+    background-color: #FFA8A8;
+}
+.y-background{
+    background-color: #F3CD43;
+}
+.y-light-background{
+    background-color: #FFF6A5;
+}
+.g-background{
+    background-color: #30E081;
+}
+.g-light-background{
+    background-color: #A8FFE5;
+}
+.shadow{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
+}
+
+.text-title{
+    font-weight: 500;
+}
+.text-card{
+    font-weight: 300;
+}
+.text-navigation{
+    font-weight: 100;
+}
+.card {
+    
+    display:block;
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.title{
+    border-radius: 8px 8px 0 0;
+    display: block;
+    width: 100%;
+    height: 20%;
+    position:relative;
+
+    
+}
+
+.footer{
+    border-radius: 0 0 8px 8px;
+    display:block;
+    width: 100%;
+    height: 20%;
+    position:relative; 
+    top: 60%;   
+}
+
+/*grid*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0% 2%;
+    grid-template-areas:
+      "MarginLeft New Open Closed MarginRitgh";
+  }
+  
+  .New { grid-area: New; }
+  
+  .Open { grid-area: Open; }
+  
+  .Closed { grid-area: Closed; }
+  
+  .MarginLeft { grid-area: MarginLeft; }
+  
+  .MarginRitgh { grid-area: MarginRitgh; }
+  
