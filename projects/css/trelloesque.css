@@ -14,18 +14,32 @@ body{
     background: #656565;
 }
 
-h3{
-    padding:5%;
+textarea, input{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+textarea{
+    outline: none;
+    width: 295px; 
+    padding-left: 5px;
+    height: 120px;
+    display:inline-block;
+    overflow-y: scroll;
+    resize: none; 
+    
 }
 
 input[type="text"]{
-    background-color: rgba(0, 0, 0, 0);
+    
     border: none;
     outline: none;
-    margin:2%;
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 35px;
     font-size: large;
+    margin-left: 5px;
+}
+i{
+    margin:2px 5px;
 }
 
 /*Colors*/
@@ -47,6 +61,26 @@ input[type="text"]{
 .g-light-background{
     background-color: #A8FFE5;
 }
+
+.r{
+    color: #FF5A5A;
+}
+.r-light{
+    color: #FFA8A8;
+}
+.y-{
+    color: #F3CD43;
+}
+.y-light{
+    color: #FFF6A5;
+}
+.g{
+    color: #30E081;
+}
+.g-light{
+    color: #A8FFE5;
+}
+
 .shadow{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
 }
@@ -63,7 +97,7 @@ input[type="text"]{
 .card {
     
     display:block;
-    width: 250px;
+    width: 300px;
     height: 200px;
     border-radius: 8px;
 }
@@ -72,7 +106,7 @@ input[type="text"]{
     border-radius: 8px 8px 0 0;
     display: block;
     width: 100%;
-    height: 20%;
+    height: 40px;
     position:relative;
 
     
@@ -80,18 +114,19 @@ input[type="text"]{
 
 .footer{
     border-radius: 0 0 8px 8px;
-    display:block;
+    display:inline-block;
     width: 100%;
     height: 20%;
     position:relative; 
-    top: 60%;   
+    top: -4px;
+    
 }
 
 /*grid*/
 
 .grid-container {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 300px 300px 300px 0.5fr;
     grid-template-rows: 1fr;
     gap: 0% 2%;
     grid-template-areas:
@@ -107,4 +142,34 @@ input[type="text"]{
   .MarginLeft { grid-area: MarginLeft; }
   
   .MarginRitgh { grid-area: MarginRitgh; }
+
+.grid-title-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap:2px;
+    grid-template-areas:
+    "title-left title-right";
+}
+
+  /*scrollbars*/
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFA8A8;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FFA8A8;
+  }
   
